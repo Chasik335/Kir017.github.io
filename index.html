@@ -1,10 +1,77 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-     <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Проба пера</title>
+
+  <script>
+    function btn1Click() {
+      alert("Эта кнопка живая! ❤️");
+    }
+    // var value = 253;
+    // document.write(`value = ${value}`);
+
+    function mult() {
+      var x = prompt("x = ");
+      var y = prompt("y = ");
+      var res = x * y;
+      alert(res);
+    }
+
+    function btn1Click2() {
+      alert(" 🥰 🤩 ");
+    }
+    // var value = 253;
+    // document.write(`value = ${value}`);
+  </script>
+     
+
+  <style>
+    p {
+      color: grey;
+      opacity: 0.2;
+    }
+
+    body {
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .glow-button {
+      text-decoration: none;
+      display: inline-block;
+      padding: 15px 30px;
+      margin: 10px 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 40px 40px #F137A6 inset, 0 0 0 0 #F137A6;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: white;
+      transition: .15s ease-in-out;
+    }
+
+    .glow-button:hover {
+      box-shadow: 0 0 10px 0 #F137A6 inset, 0 0 10px 4px #F137A6;
+      color: #F137A6;
+    }
+  </style>
+
 </head>
+
 <body>
-    <p style="color: red;">Это моя первая страница</p>
+  <div>
+    <p>
+      Кнопочуи :) 
+    </p>
+    <p>
+ 
+    </p>
+    <a href="" class="glow-button" onclick="btn1Click()">Кнопочка</a>
+    <a href="" class="glow-button" onclick="mult()">Калькулятор</a>
+    <a href="" class="glow-button"onclick="btn1Click2()">Эмоджи </a>
+  </div>
 </body>
+
 </html>

@@ -1,77 +1,52 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Проба пера</title>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
 
-  <script>
-    function btn1Click() {
-      alert("Эта кнопка живая! ❤️");
-    }
-    // var value = 253;
-    // document.write(`value = ${value}`);
+      function mult() {
+        var x = prompt("x = ");
+        var y = prompt("y = ");
+        var res = x * y;
+        alert(res);
+      }
 
-    function mult() {
-      var x = prompt("x = ");
-      var y = prompt("y = ");
-      var res = x * y;
-      alert(res);
-    }
+      function division() {
+        var x = prompt("x = ");
+        var y = prompt("y = ");
+        var res = x / y;
+        alert(res);
+      }
 
-    function btn1Click2() {
-      alert(" 🥰 🤩 ");
-    }
-    // var value = 253;
-    // document.write(`value = ${value}`);
-  </script>
-     
+      function subtr() {
+        var x = prompt("x = ");
+        var y = prompt("y = ");
+        var res = x - y;
+        alert(res);
+      }
 
-  <style>
-    p {
-      color: grey;
-      opacity: 0.2;
-    }
-
-    body {
-      font-size: 30px;
-      text-align: center;
-    }
-
-    .glow-button {
-      text-decoration: none;
-      display: inline-block;
-      padding: 15px 30px;
-      margin: 10px 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 40px 40px #F137A6 inset, 0 0 0 0 #F137A6;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: bold;
-      letter-spacing: 2px;
-      color: white;
-      transition: .15s ease-in-out;
-    }
-
-    .glow-button:hover {
-      box-shadow: 0 0 10px 0 #F137A6 inset, 0 0 10px 4px #F137A6;
-      color: #F137A6;
-    }
-  </style>
-
+      function sum() {
+        var x = prompt("x = ");
+        var y = prompt("y = ");
+        var res = (x*1) + (y*1);
+        alert(res);
+      }
+      
+    </script>
 </head>
-
 <body>
-  <div>
-    <p>
-      Кнопочуи :) 
-    </p>
-    <p>
- 
-    </p>
-    <a href="" class="glow-button" onclick="btn1Click()">Кнопочка</a>
-    <a href="" class="glow-button" onclick="mult()">Калькулятор</a>
-    <a href="" class="glow-button"onclick="btn1Click2()">Эмоджи </a>
-  </div>
-</body>
+  <p style="color:red;">Кнопка функции произведения</p>
+  <input type="button" value="Произведение" onclick="mult()" style="color: rgb(3, 3, 253); font-size: 20px; " >  
 
-</html>
+  <p style="color:red;">Кнопка функции деления</p>
+  <input type="button" value="Деление" onclick="division()" style="color: rgb(3, 3, 253); font-size: 20px; " >
+
+  <p style="color:red;">Кнопка функции вычитания</p>
+  <input type="button" value="Вычитание" onclick="subtr()" style="color: rgb(3, 3, 253); font-size: 20px; " >
+
+  <p style="color:red;">Кнопка функции сложения</p>
+  <input type="button" value="Сложение" onclick="sum()" style="color: rgb(3, 3, 253); font-size: 20px; " >
+
+</body>
+</html> 
